@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "d7400a57-5549-4c01-8603-e9f74446711b",
+		"name": "Resume Parsing API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50293846",
+		"_collection_link": "https://michikuttan123-5738628.postman.co/workspace/6e90c2f3-2f62-4f46-8022-c811f1c1ade5/collection/50293846-d7400a57-5549-4c01-8603-e9f74446711b?action=share&source=collection_link&creator=50293846"
+	},
+	"item": [
+		{
+			"name": "Parse Resume",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "resume",
+							"type": "file",
+							"src": "postman-cloud:///1f0e9a82-d524-47f0-b4bc-098b902fb231"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/upload/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"upload",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
