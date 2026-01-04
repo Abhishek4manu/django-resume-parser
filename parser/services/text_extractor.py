@@ -21,7 +21,7 @@ def extract_pdf_text(path):
     except:
         pass
 
-    # fallback to OCR
+    
     return extract_pdf_ocr(path)
 def extract_docx(path):
     doc = Document(path)
