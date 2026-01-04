@@ -1,11 +1,12 @@
 from .ocr_engine import extract_pdf_ocr
 import pdfplumber
 from docx import Document
+import pypandoc
 
 def extract_text(path):
     if path.endswith(".pdf"):
         return extract_pdf_text(path)
-    elif path.endswith(".docx" or "doc"):
+    elif path.endswith(".docx"):
         return extract_docx(path)
     else:
         raise Exception("Unsupported format")
@@ -24,5 +25,6 @@ def extract_pdf_text(path):
     
     return extract_pdf_ocr(path)
 def extract_docx(path):
-    doc = Document(path)
-    return "\n".join(p.text for p in doc.paragraphs)
+        doc = Document(path)
+        return "\n".join(p.text for p in doc.paragraphs)
+        
