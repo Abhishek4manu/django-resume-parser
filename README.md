@@ -1,3 +1,4 @@
+```bash
 # Django Resume Parser
 
 A Django backend application that allows uploading resumes (PDF/DOCX), extracts text, and parses structured information like name, email, phone, skills, education, and experience.
@@ -47,7 +48,7 @@ resume_parser/
 
 ### 1. Clone Repository
 
-
+```bash
 git clone https://github.com/Abhishek4manu/django-resume-parser.git
 cd django-resume-parser
 2. Create and Activate Virtual Environment
